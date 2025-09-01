@@ -123,3 +123,17 @@
 #         print("#",end="")
 
 # main()
+#function to receive integer from user
+def main():
+    x = get_int("what is y ")
+    print(f"the value of y is {x}")
+
+def get_int(prompt):
+    while True:
+        try:
+            x=int(input(prompt))
+            return x
+        except ValueError:
+            print("it can only be an integer")
+
+main()
