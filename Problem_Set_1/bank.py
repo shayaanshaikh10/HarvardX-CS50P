@@ -7,3 +7,4 @@ elif pos==0:
     print("$20")
 else:
     print("$100")
+    
