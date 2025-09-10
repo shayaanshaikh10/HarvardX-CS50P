@@ -124,16 +124,61 @@
 
 # main()
 #function to receive integer from user
-def main():
-    x = get_int("what is y ")
-    print(f"the value of y is {x}")
+# def main():
+#     x = get_int("what is y ")
+#     print(f"the value of y is {x}")
 
-def get_int(prompt):
-    while True:
-        try:
-            x=int(input(prompt))
-            return x
-        except ValueError:
-            print("it can only be an integer")
+# def get_int(prompt):
+#     while True:
+#         try:
+#             x=int(input(prompt))
+#             return x
+#         except ValueError:
+#             print("it can only be an integer")
 
-main()
+# main()
+
+# using random library
+# import random
+# cards=["j","q","k"]
+# random.shuffle(cards)
+# print(cards)
+
+#using statistics library
+# import statistics
+# avg=statistics.mean([2,4])
+# print(avg)
+
+#input to the program through terminal
+# import sys
+# if len(sys.argv)<2:
+#     sys.exit("too little arguements")
+# for i in sys.argv[:3]:
+#     print(f"hello {i}")
+
+#list slicing
+# list=["shayaan","batman","spiderman","messi","yamal"]
+# print(list[1:6])
+
+# using cowsay package
+# import cowsay
+# import sys
+# cowsay.trex("hello, I am "+sys.argv[1])
+
+#APIs
+# import json
+# import requests
+# import sys
+# if len(sys.argv)!=2:
+#     sys.exit("the name of the artist is not mentined")
+
+# response=requests.get(f"https://itunes.apple.com/search?entity=song&limit=50&term={sys.argv[1]}") #this will return a json file to the variable response
+# o= response.json()
+# for i in o["results"]:
+#     print(i["trackName"])
+
+#making your own libraries
+# import saying
+# import sys
+# if len(sys.argv)==2:
+#     saying.hello(sys.argv[1])
