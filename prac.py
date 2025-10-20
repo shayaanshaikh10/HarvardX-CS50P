@@ -182,3 +182,29 @@
 # import sys
 # if len(sys.argv)==2:
 #     saying.hello(sys.argv[1])
+
+#unit tests
+# def main():
+#     x=int(input("enter the value of x: "))
+#     ans=square(x)
+#     print(f"the square of x is {ans}")
+
+# def square(x):
+#     return x*x
+
+
+# if __name__=="__main__":
+#     main()
+
+#testing string
+def main ():
+    name=input("what's your name? ")
+    ans=hello(name)
+    print(ans)
+
+def hello(to="world"):
+    output = f"hello {to}"
+    return output
+
+if __name__=="__main__":
+    main()
